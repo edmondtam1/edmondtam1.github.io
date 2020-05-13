@@ -1,0 +1,211 @@
+:root {
+  --standout-color: #ee2e31;
+  --light-color: #feefe5;
+  --light-darker-color: #9e8f89;
+  --lighter-color: #fffaf0;
+  --dark-color: #565254;
+  --darker-color: #2e292a;
+  --filter-dark-color: invert(31%) sepia(12%) saturate(142%) hue-rotate(278deg) brightness(93%) contrast(84%);
+  --filter-light-color: invert(88%) sepia(11%) saturate(1091%) hue-rotate(310deg) brightness(111%) contrast(104%);
+  --filter-light-darker-color: invert(57%) sepia(6%) saturate(574%) hue-rotate(332deg) brightness(100%) contrast(90%);
+  --lg-width: 900px;
+  --transition-all: all 0.2s ease-in-out;
+}
+
+* {
+  box-sizing: border-box;
+  color: var(--light-color);
+  font-family: 'Poppins', sans-serif;
+  line-height: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Header style */
+
+header {
+  background-color: var(--standout-color);
+  padding: 10px 0;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+header a {
+  color: var(--light-color);
+  text-align: center;
+}
+
+header a:hover,
+aside a:hover {
+  color: var(--light-darker-color);
+  transition: var(--transition-all);
+}
+
+header nav {
+  font-size: 1.4rem;
+}
+
+/* convert img to var(--light-color) */
+header img,
+aside img {
+  filter: var(--filter-light-color);
+  height: 30px;
+  margin: 2px;
+  transition: var(--transition-all);
+  width: 30px;
+}
+
+/* convert img:hover to var(--light-darker-color) */
+header img:hover,
+aside img:hover,
+aside span.inverted img {
+  filter: var(--filter-light-darker-color);
+  transition: var(--transition-all);
+}
+
+/* Styling for aside */
+
+aside {
+  font-size: 1.4rem;
+  /* margin-left: 1.666666667%; */
+  opacity: 1;
+  position: fixed;
+  text-align: right;
+  transition: 0s;
+  top: 2px;
+  width: 15%;
+  z-index: 1000;
+}
+
+aside>a {
+  color: var(--light-color);
+  display: block;
+}
+
+aside .inverted {
+  color: var(--light-darker-color);
+}
+
+aside .inverted:hover {
+  color: var(--dark-color);
+}
+
+aside span.inverted img:hover {
+  filter: var(--filter-dark-color);
+}
+
+/* Styling for sections */
+
+main section {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  padding-top: 1.8rem;
+}
+
+/* Home section */
+
+#home .circular {
+  background-image: url('../images/headshot.png');
+  background-size: cover;
+  display: block;
+  height: 0;
+  margin: 0 auto;
+  padding-top: min(100%, 255px);
+  max-width: min(100%, 255px);
+
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+}
+
+#home table {
+  margin-bottom: 0;
+}
+
+#home tr {
+  padding: 0.5rem 0;
+}
+
+#home td {
+  font-size: 1.25rem;
+  padding: 0.75rem 1rem;
+  /* width: 50%; */
+}
+
+#home td:nth-child(1) {
+  text-align: left;
+}
+
+/* Sub-header column */
+
+.sub-header {
+  position: relative;
+  top: 0px;
+}
+
+.fixed-header {
+  position: sticky;
+  top: 2px;
+}
+
+/* Project section */
+
+img.project-img {
+  background-color: white;
+  border: 3px solid var(--light-color);
+  border-radius: 3px;
+  display: block;
+  margin: 1rem auto;
+  height: auto;
+  max-width: 300px;
+  width: 100%;
+}
+
+div.project-card {
+  padding: 5px 0 2px;
+}
+
+/* Credit to CSS tricks at https://css-tricks.com/almanac/properties/b/box-shadow/ */
+
+.shadow-btm {
+  position: relative;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.shadow-btm:before,
+.shadow-btm:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  top: 50%;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  -moz-border-radius: 100px / 10px;
+  border-radius: 100px / 10px;
+}
+
+.shadow-btm:after {
+  right: 10px;
+  left: auto;
+  -webkit-transform: skew(8deg) rotate(3deg);
+  -moz-transform: skew(8deg) rotate(3deg);
+  -ms-transform: skew(8deg) rotate(3deg);
+  -o-transform: skew(8deg) rotate(3deg);
+  transform: skew(8deg) rotate(3deg);
+}
+
+code {
+  background-color: var(--light-color);
+  color: var(--standout-color);
+  padding: 0 1px;
+}
