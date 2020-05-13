@@ -109,39 +109,26 @@ main section {
 /* Home section */
 
 #home .circular {
-  /* background-image: url('../images/headshot.png'); */
-  /* background-size: cover; */
   display: block;
-  height: 255px;
-  width: 255px;
+  max-width: 255px;
+  width: 100%;
   overflow: hidden;
+  position: relative;
 
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
 }
 
+#home .circular:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
 #home .circular img {
+  height: 100%;
   width: 100%;
-  height: auto;
-}
-
-#home table {
-  margin-bottom: 0;
-}
-
-#home tr {
-  padding: 0.5rem 0;
-}
-
-#home td {
-  font-size: 1.25rem;
-  padding: 0.75rem 1rem;
-  /* width: 50%; */
-}
-
-#home td:nth-child(1) {
-  text-align: left;
 }
 
 /* Sub-header column */
