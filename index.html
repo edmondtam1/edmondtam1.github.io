@@ -29,17 +29,17 @@
           <div class="col-lg-2 col-md-3 my-md-2 text-center">
             <!-- TODO: figure out resizing quality -->
             <span>
-              <a href="https://www.github.com/edmondtam1" target="_blank">
+              <a href="https://www.github.com/edmondtam1" target="_blank" rel="noopener">
                 <img src="./images/github_30x30.png" alt="Github - Edmond">
               </a>
             </span>
             <span>
-              <a href="https://www.linkedin.com/in/edmondtam" target="_blank">
+              <a href="https://www.linkedin.com/in/edmondtam" target="_blank" rel="noopener">
                 <img src="./images/linkedin_30x30.png" alt="LinkedIn - Edmond">
               </a>
             </span>
             <span>
-              <a href="mailto:edmondtam2@gmail.com" target="_blank">
+              <a href="mailto:edmondtam2@gmail.com" target="_blank" rel="noopener">
                 <img src="./images/email_30x30.png" alt="Email - Edmond">
               </a>
             </span>
@@ -56,7 +56,13 @@
           <div class="row align-items-center">
             <div class="col-0 col-md-3"></div>
             <div class="col-12 col-md-3">
-              <div class="circular mx-auto shadow-btm"></div>
+              <div class="circular mx-auto shadow-btm">
+                <picture>
+                  <source type="image/webp" srcset="./images/headshot.webp">
+                  <source type="image/png" srcset="./images/headshot.png">
+                  <img src="./images/headshot.png" alt="Picture of Edmond">
+                </picture>
+              </div>
             </div>
             <div class="col-12 col-md-5 text-center text-md-left">
               <br class="d-md-none">
@@ -76,7 +82,8 @@
             </div>
             <div class="col-12 col-md-5">
               <h5 class="text-left">
-                I'm a software engineer with <span class="exp-years"></span> of experience working at a machine learning
+                I'm a software engineer with <span class="exp-years my-0"></span> of experience working at a machine
+                learning
                 startup in the UK. I am proficient in Ruby,
                 Python and JavaScript, and would like to apply technology for good, particularly through
                 innovative tech, business and finance.
@@ -105,11 +112,16 @@
                 <h3 class="text-center text-md-left my-0">
                   Project management system
                 </h3>
-                <a class="mx-auto pt-1 d-block" href="https://ticketing-app-et.herokuapp.com/" target="_blank">
-                  <img class="project-img shadow-btm" src="./images/ticketing.png" alt="Ticketing project">
+                <a class="mx-auto pt-1 d-block" href="https://ticketing-app-et.herokuapp.com/" target="_blank"
+                  rel="noopener">
+                  <picture>
+                    <source type="image/webp" srcset="./images/ticketing.webp">
+                    <source type="image/png" srcset="./images/ticketing.png">
+                    <img class="project-img" src="./images/ticketing.png" alt="Ticketing project">
+                  </picture>
                 </a>
                 <h5 class="text-center font-italic"><a href="https://github.com/edmondtam1/rails-ticketing-system"
-                    target="_blank">Github</a></h5>
+                    target="_blank" rel="noopener">Github</a></h5>
                 <h5>
                   This project management system is created using
                   <code>Rails</code> and
@@ -120,12 +132,16 @@
                 <h3 class="text-center text-md-left my-0">
                   Flight routes map
                 </h3>
-                <a class="mx-auto pt-1 d-block" href="https://airline-routes-et.herokuapp.com/" target="_blank">
-                  <img class="project-img shadow-btm" src="./images/airline_routes_300x300.png"
-                    alt="Airline routes map">
+                <a class="mx-auto pt-1 d-block" href="https://airline-routes-et.herokuapp.com/" target="_blank"
+                  rel="noopener">
+                  <picture>
+                    <source type="image/webp" srcset="./images/airline_routes_300x300.webp">
+                    <source type="image/png" srcset="./images/airline_routes_300x300.png">
+                    <img class="project-img" src="./images/airline_routes_300x300.png" alt="Airline routes map">
+                  </picture>
                 </a>
                 <h5 class="text-center font-italic"><a href="https://github.com/edmondtam1/airline-routes"
-                    target="_blank">Github</a></h5>
+                    target="_blank" rel="noopener">Github</a></h5>
                 <h5>
                   Check out available flight routes with this interactive map. Pick a route on the map and see what
                   you've chosen - it may be your next holiday! Otherwise, use the filter below to look at available

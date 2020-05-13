@@ -109,17 +109,21 @@ main section {
 /* Home section */
 
 #home .circular {
-  background-image: url('../images/headshot.png');
-  background-size: cover;
+  /* background-image: url('../images/headshot.png'); */
+  /* background-size: cover; */
   display: block;
-  height: 0;
-  margin: 0 auto;
-  padding-top: min(100%, 255px);
-  max-width: min(100%, 255px);
+  height: 255px;
+  width: 255px;
+  overflow: hidden;
 
-  border-radius: 100%;
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+}
+
+#home .circular img {
+  width: 100%;
+  height: auto;
 }
 
 #home table {
