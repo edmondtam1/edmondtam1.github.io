@@ -1,0 +1,563 @@
+@import url("whitespace-reset.css");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+/* ---------------------------------
+
+                general
+
+------------------------------------ */
+:root {
+  --main-color: #35495e;
+  --jade-color: #00a86b;
+  --secondary-color: indianred;
+}
+
+body {
+  -webkit-animation: fadeIn 2s;
+  -moz-animation: fadeIn 2s;
+  -o-animation: fadeIn 2s;
+  animation: fadeIn 2s;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+html {
+  font-size: 18px;
+}
+
+h1 {
+  color: var(--main-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+h3,
+#resume-btn {
+  color: var(--main-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 25px 0;
+}
+
+header {
+  padding: 15px;
+  position: fixed;
+}
+
+#about-me {
+  display: none;
+}
+
+#about-me-toggle {
+  width: 40px;
+  height: 40px;
+}
+
+#intro > h4 > img {
+  display: inline-block;
+  padding-right: 5px;
+}
+
+#projects > ul {
+  -ms-align-items: flex-start;
+  align-items: flex-start;
+  margin-top: 75px;
+}
+
+#projects img {
+  border: 1px solid rgba(53, 73, 94, 0.2);
+  box-shadow: 0 0 25px #d2d7d3;
+  width: 100%;
+}
+
+h4 {
+  align-items: center;
+  color: var(--main-color);
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  height: 35px;
+  justify-content: center;
+  margin: 20px 0;
+  text-align: center;
+}
+
+h5 {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.7rem;
+  margin-bottom: 15px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.jade {
+  color: var(--jade-color);
+}
+
+a.jade:hover {
+  color: var(--main-color);
+  transition: 0.2s;
+}
+
+a.email {
+  color: var(--jade-color);
+}
+
+a.email:hover {
+  color: var(--main-color);
+  transition: 0.2;
+}
+
+li {
+  margin: 0 2%;
+  width: 25%;
+}
+
+section {
+  padding: 100px 10%;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #ecf0f1;
+  width: 15%;
+}
+
+footer {
+  background-color: #262626;
+  padding: 25px 0;
+}
+
+.flexbox {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.btn {
+  background-color: var(--main-color);
+  border: solid 1px var(--main-color);
+  border-radius: 5px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  padding: 10px;
+  text-align: center;
+}
+
+.icon {
+  background-color: var(--main-color);
+  border: solid 1px var(--main-color);
+  border-radius: 25px;
+  margin: 2%;
+  min-width: 34px;
+  padding: 3px;
+  width: 100%;
+}
+
+.btn:hover,
+.icon:hover {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  transition: 0.2s;
+}
+
+.horz-center {
+  -ms-align-items: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.vert-center {
+  -ms-align-items: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#logo {
+  margin: 25px;
+  opacity: 0.5;
+  position: fixed;
+  width: 60px;
+}
+
+/* ---------------------------------
+
+               intro
+
+------------------------------------ */
+
+#avatar {
+  display: block;
+  max-width: 250px;
+  min-width: 200px;
+  object-fit: contain;
+  width: 25%;
+}
+
+#intro > p {
+  text-align: center;
+  width: 600px;
+}
+
+/* ---------------------------------
+
+               #jade
+
+------------------------------------ */
+
+#jade {
+  background-color: #ecf0f1;
+}
+
+#jade-title-container,
+#jade-video-container {
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#jade-logo {
+  display: inline-block;
+  width: 100%;
+  max-width: 400px;
+  min-width: 200px;
+}
+
+#jade h2 {
+  display: inline-block;
+}
+
+#jade-info-container,
+#jade-video-container {
+  margin-top: 75px;
+}
+
+#jade-info-container > div,
+#jade-video-container > div {
+  width: 50%;
+}
+
+#jade-info-container > div:first-of-type,
+#jade-video-container > div:first-of-type {
+  margin-right: 2.5%;
+}
+
+#init-gif {
+  background-color: #282828;
+  border: solid 10px #282828;
+  border-radius: 10px;
+  height: auto;
+  max-width: 100%;
+  width: auto;
+}
+
+div > iframe {
+  max-width: 100%;
+}
+
+#jade-info-container > div:last-of-type,
+#jade-video-container > div:last-of-type {
+  margin-left: 2.5%;
+}
+
+#jade p:first-of-type {
+  position: relative;
+  top: -0.5rem;
+}
+
+#jade-repo-btn {
+  background-color: var(--jade-color);
+  border: solid 1px var(--jade-color);
+  margin-top: 18px;
+  width: 228px;
+}
+
+#jade-repo-btn:hover {
+  background-color: var(--main-color);
+  border: solid 1px var(--main-color);
+  transition: 0.2s;
+}
+
+/* ---------------------------------
+
+              contact
+
+------------------------------------ */
+
+#resume-logo {
+  cursor: pointer;
+  width: 35px;
+  position: fixed;
+  top: 5px;
+  left: 5px;
+}
+
+#github-logo {
+  cursor: pointer;
+  width: 35px;
+  position: fixed;
+  top: 55px;
+  left: 5px;
+}
+
+#linkedin-logo {
+  cursor: pointer;
+  width: 35px;
+  position: fixed;
+  top: 105px;
+  left: 5px;
+}
+
+#contact h3 {
+  margin-bottom: 10px;
+}
+
+#contact ul {
+  width: 20%;
+}
+
+#contact li {
+  margin: 6%;
+}
+
+/* ---------------------------------
+
+           media queries
+
+------------------------------------ */
+
+@media (max-width: 1100px) {
+  h4 {
+    font-size: 1.1rem;
+  }
+
+  #logo {
+    margin: 20px;
+    width: 55px;
+  }
+
+  #projects p {
+    font-size: 0.85rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (max-width: 920px) {
+  section {
+    padding: 100px 15%;
+  }
+
+  li {
+    margin-bottom: 100px;
+    width: 100%;
+  }
+
+  li:last-of-type {
+    margin-bottom: 0;
+  }
+
+  #projects p {
+    font-size: 1rem;
+    line-height: 1.7rem;
+  }
+
+  #projects > ul {
+    -ms-align-items: center;
+    align-items: center;
+    flex-direction: column;
+    width: 75%;
+  }
+
+  #logo {
+    width: 50px;
+  }
+
+  #jade-info-container,
+  #jade-video-container {
+    -ms-align-items: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+
+  #jade-info-container > div:first-of-type,
+  #jade-video-container > div:first-of-type {
+    margin-right: 0;
+  }
+
+  #jade-info-container > div:last-of-type,
+  #jade-video-container > div:last-of-type {
+    margin-left: 0;
+  }
+
+  #jade-info-container > div,
+  #jade-video-container > div {
+    width: 90%;
+  }
+
+  #deploy-command-gif,
+  div > iframe {
+    margin-bottom: 50px;
+  }
+
+  #contact ul {
+    width: 30%;
+  }
+
+  #contact li {
+    margin: 8%;
+  }
+}
+
+@media (max-width: 690px) {
+  #jade-logo {
+    margin-bottom: 25px;
+    width: 75px;
+  }
+
+  #jade-title-container {
+    -ms-align-items: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #jade-logo {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 570px) {
+  #intro > p {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 2.7rem;
+    width: 80vw;
+  }
+
+  h2 {
+    font-size: 1.9rem;
+  }
+
+  section {
+    padding: 65px 15%;
+  }
+
+  #jade-info-container {
+    margin-top: 25px;
+  }
+
+  #jade-repo-btn {
+    align-self: center;
+  }
+
+  #projects > ul {
+    width: 100%;
+  }
+}
+
+@media (max-width: 465px) {
+  #jade-info-container > div {
+    width: 100%;
+  }
+
+  #jade-logo {
+    width: 60px;
+  }
+
+  #contact li {
+    margin: 15%;
+  }
+
+  #projects > ul {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  #jade-repo-btn {
+    width: 180px;
+  }
+
+  #projects > ul {
+    margin-top: 50px;
+  }
+
+  #projects li {
+    margin-bottom: 50px;
+  }
+
+  #projects li:last-of-type {
+    margin-bottom: 0;
+  }
+}
