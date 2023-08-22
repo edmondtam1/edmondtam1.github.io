@@ -90,12 +90,12 @@ header {
   height: 40px;
 }
 
-#intro>h4>img {
+#intro > h4 > img {
   display: inline-block;
   padding-right: 5px;
 }
 
-#projects>ul {
+#projects > ul {
   -ms-align-items: flex-start;
   align-items: flex-start;
   margin-top: 75px;
@@ -137,6 +137,15 @@ p {
 
 a {
   text-decoration: none;
+}
+
+a.eras {
+  color: #ffd147;
+}
+
+a.eras:hover {
+  color: var(--main-color);
+  transition: 0.2s;
 }
 
 a.jade {
@@ -247,7 +256,7 @@ footer {
   width: 25%;
 }
 
-#intro>p {
+#intro > p {
   text-align: center;
   width: 600px;
 }
@@ -285,13 +294,13 @@ footer {
   margin-top: 75px;
 }
 
-#jade-info-container>div,
-#jade-video-container>div {
+#jade-info-container > div,
+#jade-video-container > div {
   width: 50%;
 }
 
-#jade-info-container>div:first-of-type,
-#jade-video-container>div:first-of-type {
+#jade-info-container > div:first-of-type,
+#jade-video-container > div:first-of-type {
   margin-right: 2.5%;
 }
 
@@ -304,12 +313,12 @@ footer {
   width: auto;
 }
 
-div>iframe {
+div > iframe {
   max-width: 100%;
 }
 
-#jade-info-container>div:last-of-type,
-#jade-video-container>div:last-of-type {
+#jade-info-container > div:last-of-type,
+#jade-video-container > div:last-of-type {
   margin-left: 2.5%;
 }
 
@@ -414,7 +423,7 @@ div>iframe {
     line-height: 1.7rem;
   }
 
-  #projects>ul {
+  #projects > ul {
     -ms-align-items: center;
     align-items: center;
     flex-direction: column;
@@ -437,23 +446,23 @@ div>iframe {
     margin-top: 0.5rem;
   }
 
-  #jade-info-container>div:first-of-type,
-  #jade-video-container>div:first-of-type {
+  #jade-info-container > div:first-of-type,
+  #jade-video-container > div:first-of-type {
     margin-right: 0;
   }
 
-  #jade-info-container>div:last-of-type,
-  #jade-video-container>div:last-of-type {
+  #jade-info-container > div:last-of-type,
+  #jade-video-container > div:last-of-type {
     margin-left: 0;
   }
 
-  #jade-info-container>div,
-  #jade-video-container>div {
+  #jade-info-container > div,
+  #jade-video-container > div {
     width: 90%;
   }
 
   #deploy-command-gif,
-  div>iframe {
+  div > iframe {
     margin-bottom: 50px;
   }
 
@@ -484,7 +493,7 @@ div>iframe {
 }
 
 @media (max-width: 570px) {
-  #intro>p {
+  #intro > p {
     width: 100%;
   }
 
@@ -509,13 +518,13 @@ div>iframe {
     align-self: center;
   }
 
-  #projects>ul {
+  #projects > ul {
     width: 100%;
   }
 }
 
 @media (max-width: 465px) {
-  #jade-info-container>div {
+  #jade-info-container > div {
     width: 100%;
   }
 
@@ -527,7 +536,7 @@ div>iframe {
     margin: 15%;
   }
 
-  #projects>ul {
+  #projects > ul {
     width: 100%;
   }
 }
@@ -553,7 +562,7 @@ div>iframe {
     width: 180px;
   }
 
-  #projects>ul {
+  #projects > ul {
     margin-top: 50px;
   }
 
